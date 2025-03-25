@@ -5,6 +5,7 @@
 [Aula 2 - Grids](#aula-2---grids)  
 [Aula 3 - Tipografia](#aula-3---tipografia)
 [Aula 4 - Tabelas](#aula-4---tabelas)
+[Aula 5 - Botões](#aula-5---botões)
 
 ## Aula 1 - Conheça o Bootstrap
 
@@ -136,4 +137,41 @@ Aprenderemos sobre tabelas e quais recursos o Bootstrap oferece para estilizar e
 
 ### Dica:
 Mesmo utilizando o Bootstrap, é importante manter um **arquivo CSS próprio** para ajustes finos no layout e personalização de estilos específicos.
+
+## Aula 5 - Botões
+
+A classe principal para aplicar estilo aos botões é `btn`. De forma geral, os estilos seguem um padrão semelhante ao das tabelas, mas com variações nas cores.
+
+### Classes de estilo para botões:
+
+- `btn-primary` → Azul
+- `btn-secondary` → Cinza
+- `btn-success` → Verde
+- `btn-danger` → Vermelho
+- `btn-warning` → Fundo amarelo com texto preto
+- `btn-info` → Tom de azul claro
+- `btn-light` → Cinza claro
+- `btn-dark` → Preto
+- `btn-link` → Aparência de um link (sem borda, azul com sublinhado)
+
+### Botões com contorno (outline):
+
+- `btn-outline-*` → Versão sem fundo colorido, com borda e texto na cor correspondente.
+
+Exemplo:
+```html
+<button class="btn btn-outline-success">Salvar</button>
+```
+
+### Tamanhos dos botões:
+
+- `btn-lg` → Botão grande
+- `btn-md` → Botão médio (padrão)
+- `btn-sm` → Botão pequeno
+
+> Lembre-se de sempre usar `btn` junto com qualquer uma dessas classes para o estilo funcionar corretamente:
+
+```html
+<button class="btn btn-primary btn-lg">Clique aqui</button>
+```
 
