@@ -1,8 +1,9 @@
 # Fundamentos do Bootstrap
 
 ## Menu
-[Aula 1 - Conheça o Bootstrap](#aula-1---conheça-o-bootstrap)
-[Aula 1 - Grids](#aula-2---grids)
+[Aula 1 - Conheça o Bootstrap](#aula-1---conheça-o-bootstrap)  
+[Aula 2 - Grids](#aula-2---grids)  
+[Aula 3 - Tipografia](#aula-3---tipografia)
 
 ## Aula 1 - Conheça o Bootstrap
 
@@ -82,4 +83,15 @@ Esse atalho cria rapidamente uma estrutura com 5 colunas, cada uma contendo uma 
     </div>
 </div>
 ```
+
+## Aula 3 - Tipografia
+
+Nesta aula vamos falar de fontes e tipografia no Bootstrap.
+
+O Bootstrap aplica estilos e efeitos tipográficos a diversas tags de texto como `<h1>` a `<h6>`, `<p>`, `<mark>`, entre outras.
+
+### Principais classes:
+
+- `h1` a `h6` → Aplicam estilos de títulos a outros elementos, como parágrafos.
+- `display-1` a `display-6` → Aumentam o tamanho da fonte e reduzem o peso do traço, criando títulos de destaque.
 
