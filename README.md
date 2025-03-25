@@ -4,6 +4,7 @@
 [Aula 1 - Conheça o Bootstrap](#aula-1---conheça-o-bootstrap)  
 [Aula 2 - Grids](#aula-2---grids)  
 [Aula 3 - Tipografia](#aula-3---tipografia)
+[Aula 4 - Tabelas](#aula-4---tabelas)
 
 ## Aula 1 - Conheça o Bootstrap
 
@@ -94,4 +95,45 @@ O Bootstrap aplica estilos e efeitos tipográficos a diversas tags de texto como
 
 - `h1` a `h6` → Aplicam estilos de títulos a outros elementos, como parágrafos.
 - `display-1` a `display-6` → Aumentam o tamanho da fonte e reduzem o peso do traço, criando títulos de destaque.
+
+## Aula 4 - Tabelas
+
+Aprenderemos sobre tabelas e quais recursos o Bootstrap oferece para estilizar e organizar melhor esses elementos.
+
+### Principais tags de uma tabela:
+*(Algumas tags adicionais serão comentadas no código abaixo)*
+
+```html
+<table class="table">
+    <caption>Tabela de produtos</caption> <!-- Legenda -->
+    <thead> <!-- Cabeçalho - Geralmente com os títulos -->
+        <tr> <!-- Linha do cabeçalho -->
+            <th>Nome do produto</th> <!-- Coluna cabeçalho -->
+            <th>Preço original</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr> <!-- Linha onde ficam as células de conteúdo -->
+            <td>Iphone 13</td> <!-- Coluna com conteúdo -->
+            <td>R$7.000,00</td>
+        </tr>
+    </tbody>
+    <!-- <tfoot>Rodapé da tabela</tfoot> (pode ser utilizado para totais, notas ou sumários) -->
+</table>
+```
+
+### Classes mais usadas para tabelas no Bootstrap:
+
+- `table` → Define largura 100% e bordas visuais entre as linhas.
+- `table-primary` → Estilo com cor primária.
+- `table-secondary` → Estilo com cor secundária.
+- `table-success` → Estilo com tom de sucesso (verde).
+- `table-danger` → Estilo para erros ou dados negativos (vermelho).
+- `table-warning` → Estilo para alertas ou atenção (amarelo).
+- `table-info` → Estilo com tom informativo (azul claro).
+- `table-light` → Estilo claro, acinzentado.
+- `table-dark` → Estilo escuro.
+
+### Dica:
+Mesmo utilizando o Bootstrap, é importante manter um **arquivo CSS próprio** para ajustes finos no layout e personalização de estilos específicos.
 
