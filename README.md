@@ -6,6 +6,7 @@
 [Aula 3 - Tipografia](#aula-3---tipografia)
 [Aula 4 - Tabelas](#aula-4---tabelas)
 [Aula 5 - Botões](#aula-5---botões)
+[Aula 6 - Accordions](#aula-6---accordions)
 
 ## Aula 1 - Conheça o Bootstrap
 
@@ -174,4 +175,55 @@ Exemplo:
 ```html
 <button class="btn btn-primary btn-lg">Clique aqui</button>
 ```
+
+## Aula 6 - Accordions
+
+Nesta aula vamos aprender a trabalhar com accordions, mas para isso precisamos adicionar ao nosso `HTML` o JavaScript do Bootstrap.
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+```
+
+Esta é a forma que está em vigor atualmente (26/03/2025). Por via das dúvidas, entre no site do [Bootstrap](https://getbootstrap.com/) e acesse a documentação para ver a forma mais atualizada de como adicioná-lo ao seu projeto.
+
+### Estrutura do Accordion
+
+```html
+<div class="accordion"> <!-- Vai englobar toda a estrutura, como se fosse um <ul> -->
+  <div class="accordion-item"> <!-- Como se fosse o <li>, com uma estrutura mais personalizada -->
+    <div class="accordion-header"> <!-- Container do título, onde ficará a pergunta -->
+      <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+        Como fazer accordions?
+      </button> <!-- Botão com o texto da pergunta, com função de alternar mostrar/ocultar a resposta -->
+    </div>
+    <div id="resposta1" class="accordion-collapse collapse show"> <!-- Alvo da ação do botão. A classe 'show' faz com que a resposta apareça por padrão. Para iniciar recolhido, remova a classe 'show'. -->
+      <div class="accordion-body">
+        Resposta da pergunta
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Análise com JavaScript
+
+```js
+document.querySelector('button')
+// <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">...</button>
+
+document.querySelector('button').dataset
+// DOMStringMap { bsToggle: 'collapse', bsTarget: '#resposta1' }
+```
+
+### Observação sobre atributos personalizados
+
+No final da aula, o professor explicou sobre a possibilidade de criação de **atributos customizados** (por exemplo, `data-ebac="btn-teste"`), que podem:
+
+- Ajudar na **identificação de elementos**;
+- Servir como **ponte entre o frontend e o backend**;
+- Deixar o código mais **organizado e semântico**.
+
+> **Atenção:** nunca coloque **informações sensíveis** nesses atributos, pois eles podem ser acessados pelo cliente através do navegador.
+
+Esses atributos personalizados funcionam de forma similar ao `data-bs-*`, que é exatamente como o Bootstrap adiciona interatividade aos elementos HTML sem que você precise escrever JavaScript manualmente.
 
