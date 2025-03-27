@@ -263,3 +263,28 @@ Esse CSS foi usado para organizar a forma como o texto era apresentado. Antes, e
 
 ## Aula 8 - Alertas
 
+Vamos aprender a criar alertas e mensagens com o Bootstrap. Basicamente, aprendemos a fazer um tipo de **pop-up** informativo.
+
+### Exemplo de Alerta:
+
+```html
+<div class="alert alert-dark alert-dismissible"> <!-- Cria um alerta + cor cinza escuro + organização visual -->
+  <button class="btn-close" data-bs-dismiss="alert"></button> <!-- Botão de fechar com função de remover o alerta -->
+  Sou uma mensagem de informação
+</div>
+```
+
+Dessa forma, criamos um alerta no Bootstrap. A classe `alert-dismissible` garante que o alerta tenha espaçamento e estilo apropriado para um botão de fechamento, enquanto `data-bs-dismiss="alert"` ativa a funcionalidade de fechar o alerta ao clicar no botão.
+
+### Variações de cores de alerta:
+
+- `alert-primary` → Azul
+- `alert-secondary` → Cinza
+- `alert-info` → Azul claro
+- `alert-danger` → Vermelho
+- `alert-warning` → Amarelo
+- `alert-success` → Verde
+- `alert-dark` → Cinza escuro
+- `alert-light` → Cinza claro
+
+Cada uma dessas classes altera a cor e o estilo do alerta para se adequar ao tipo de mensagem (sucesso, erro, informação, etc).
