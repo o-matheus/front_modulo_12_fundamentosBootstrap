@@ -10,6 +10,7 @@
 [Aula 7 - Collapse](#aula-7---collapse)
 [Aula 8 - Alertas](#aula-8---alertas)
 [Aula 9 - Desenvolva Formulários](#aula-9---desenvolva-formulários)
+[Boas práticas](#boas-práticas)
 
 ## Aula 1 - Conheça o Bootstrap
 
@@ -357,3 +358,46 @@ Aqui escrevemos bastante, fizemos um layout de um blog com seções de últimas 
 
 Essas classes tornam o formulário responsivo, elegante e padronizado com o estilo do Bootstrap.
 
+## Boas práticas
+
+### Dropdown
+Menu suspenso. A classe `dropdown-toggle` é usada para criar o efeito de recolher ou mostrar o menu.
+
+### Tabs
+É uma forma eficiente de exibir conteúdo menor ou segmentado. Em vez de todo o conteúdo estar visível de uma só vez (como em uma landing page), cada seção aparece isoladamente e requer interação com um botão para acessar a próxima aba.
+
+### Modais
+São janelas pop-ups usadas para exibir avisos ou solicitar ações diretas do usuário.
+
+**Exemplo de confirmação de exclusão:**
+> "Tem certeza que deseja excluir este item?"
+
+### Tooltips
+Pequenas caixas de texto exibidas ao passar o mouse sobre um elemento. Servem para dar dicas ou informações adicionais.
+
+![Exemplo tooltip](README/tooltip.png)
+
+### Popovers
+Parecidos com os tooltips, mas mais personalizáveis. Podem conter botões, títulos e estilos personalizados.
+
+### Sidenav
+É uma barra lateral (como no Notion ou VS Code) que pode ser mostrada ou recolhida, dependendo do espaço necessário.
+
+---
+
+## Customização de Tabelas
+- `table-bordered` → Adiciona bordas a todas as células da tabela.
+- `table-striped` → Alterna a cor de fundo entre as linhas.
+- `table-responsive` → Torna a tabela responsiva em telas menores (adiciona scroll horizontal).
+
+## Customização de Botões e Links
+- `btn-lg`, `btn-sm`, `btn-xs` → Define o tamanho dos botões.
+- `rounded` → Adiciona cantos arredondados.
+- `shadow-*` → Adiciona efeito de sombra (1 a 5 para definir intensidade).
+
+## Customização de Alertas
+É possível adicionar:
+- Títulos personalizados
+- Efeitos de `fade` e `show` para transições suaves
+
+> ✨ Lembrando: você pode personalizar ainda mais com CSS próprio ou explorando a [documentação oficial do Bootstrap](https://getbootstrap.com/).
