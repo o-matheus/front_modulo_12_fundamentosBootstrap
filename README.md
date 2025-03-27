@@ -9,6 +9,7 @@
 [Aula 6 - Accordions](#aula-6---accordions)
 [Aula 7 - Collapse](#aula-7---collapse)
 [Aula 8 - Alertas](#aula-8---alertas)
+[Aula 9 - Desenvolva Formulários](#aula-9---desenvolva-formulários)
 
 ## Aula 1 - Conheça o Bootstrap
 
@@ -288,3 +289,71 @@ Dessa forma, criamos um alerta no Bootstrap. A classe `alert-dismissible` garant
 - `alert-light` → Cinza claro
 
 Cada uma dessas classes altera a cor e o estilo do alerta para se adequar ao tipo de mensagem (sucesso, erro, informação, etc).
+
+## Aula 9 - Desenvolva formulários
+
+Aqui escrevemos bastante, fizemos um layout de um blog com seções de últimas postagens, anunciantes e um formulário de contato no final.
+
+### Estrutura do layout
+
+```html
+<div class="row"> <!-- Criando linha de informações -->
+  <div class="col-md-8"> <!-- Ocupa até 8 colunas no perfil médio -->
+    <div class="container g-0"> <!-- Alinha o elemento à esquerda -->
+      <h2>Últimas postagens</h2>
+      <div class="row"> <!-- Linha de conteúdo -->
+        <div class="col-md-4 post"> <!-- Ocupa até 4 colunas dentro da row -->
+          <img src="https://placehold.co/180x180" alt="">
+          <h4 class="h5">Título da postagem</h4>
+          <time>26/03/2025</time>
+          <a class="btn btn-primary btn-sm">Leia mais</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 d-flex justify-content-end"> <!-- Ocupa 4 colunas + alinha à direita -->
+    <div>
+      <h2>Anunciantes</h2>
+      <img src="https://placehold.co/180x180" alt="">
+    </div>
+  </div>
+</div>
+```
+
+### Formulário de contato
+
+```html
+<div class="row"> <!-- Linha de conteúdo -->
+  <div class="col">
+    <h2>Entre em contato</h2>
+    <form>
+      <label class="form-label" for="nome">Seu nome:</label>
+      <input class="form-control" type="text" id="nome">
+
+      <label class="form-label" for="email">Seu e-mail:</label>
+      <input class="form-control" type="email" id="email">
+
+      <label class="form-label" for="mensagem">Sua mensagem:</label>
+      <textarea class="form-control" id="mensagem"></textarea>
+
+      <div class="form-check form-switch">
+        <label class="form-check-label" for="aceito-termos">Li e concordo com os termos e condições</label>
+        <input class="form-check-input" id="aceito-termos" type="checkbox">
+      </div>
+
+      <button class="btn btn-success">Enviar</button>
+    </form>
+  </div>
+</div>
+```
+
+### Classes utilizadas para formulários
+
+- `form-label`, `form-check-label`: estilizam as **labels** do formulário.
+- `form-control`, `form-check-input`: aplicam estilo aos **inputs e textarea**.
+- `form-check`, `form-switch`: controlam o estilo e o alinhamento de elementos como **checkbox e switches**.
+  - `form-switch` transforma o checkbox em um **botão deslizante**.
+
+Essas classes tornam o formulário responsivo, elegante e padronizado com o estilo do Bootstrap.
+
