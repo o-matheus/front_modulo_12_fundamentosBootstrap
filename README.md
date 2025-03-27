@@ -7,6 +7,8 @@
 [Aula 4 - Tabelas](#aula-4---tabelas)
 [Aula 5 - Botões](#aula-5---botões)
 [Aula 6 - Accordions](#aula-6---accordions)
+[Aula 7 - Collapse](#aula-7---collapse)
+[Aula 8 - Alertas](#aula-8---alertas)
 
 ## Aula 1 - Conheça o Bootstrap
 
@@ -226,4 +228,38 @@ No final da aula, o professor explicou sobre a possibilidade de criação de **a
 > **Atenção:** nunca coloque **informações sensíveis** nesses atributos, pois eles podem ser acessados pelo cliente através do navegador.
 
 Esses atributos personalizados funcionam de forma similar ao `data-bs-*`, que é exatamente como o Bootstrap adiciona interatividade aos elementos HTML sem que você precise escrever JavaScript manualmente.
+
+## Aula 7 - Collapse
+
+Nesta aula vamos adicionar o efeito **collapse**, para mostrar ou esconder informações, só que dessa vez usando um **botão**.
+
+### Exemplo de estrutura:
+
+```html
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#preco">
+  Ver preço
+</button>
+
+<div id="preco" class="collapse collapse-horizontal"> <!-- 'collapse-horizontal' faz o elemento expandir da esquerda para a direita. Sem ele, o comportamento padrão é de cima para baixo. -->
+  <p>
+    3 x de R$300,00
+  </p>
+</div>
+```
+
+Esse botão tem uma interação parecida com o accordion: ao clicar, a informação é exibida ou ocultada.
+
+---
+
+### Estilização com CSS
+
+```css
+#preco p {
+  width: 300px;
+}
+```
+
+Esse CSS foi usado para organizar a forma como o texto era apresentado. Antes, ele ocupava mais de três linhas; depois da alteração, passou a ocupar apenas **uma linha**, deixando a interface mais limpa e organizada.
+
+## Aula 8 - Alertas
 
